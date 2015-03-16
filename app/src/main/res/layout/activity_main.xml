@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+    <LinearLayout android:id="@+id/row_1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/row_spacing">
+
+        <LinearLayout android:id="@+id/box_steps"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingRight="@dimen/margin"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/step_value"
+                android:textSize="@dimen/value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@android:color/black"
+                android:textColor="#669900"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingTop="@dimen/padding" />
+            <TextView android:id="@+id/step_units"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:text="@string/steps"
+                android:background="@android:color/black"
+                android:textColor="#669900"
+                android:paddingBottom="@dimen/padding"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/box_distance"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/distance_value"
+                android:textSize="@dimen/value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@android:color/black"
+                android:textColor="#669900"
+                android:paddingTop="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingLeft="@dimen/padding"
+                android:text=""/>
+            <TextView android:id="@+id/distance_units"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:text="@string/kilometers"
+                android:background="@android:color/black"
+                android:textColor="#669900"
+                android:paddingBottom="@dimen/padding"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/row_2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/row_spacing">
+
+        <LinearLayout android:id="@+id/box_pace"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/margin"
+            android:layout_width="fill_parent"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/pace_value"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:textColor="#669900"
+                android:textSize="@dimen/small_value"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:text=""/>
+            <TextView android:id="@+id/pace_units"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:text="@string/steps_per_minute"
+                android:paddingBottom="@dimen/padding"
+                android:background="@android:color/black"
+                android:textColor="#669900"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/box_speed"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/margin"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/speed_value"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:textColor="#669900"
+                android:textSize="@dimen/small_value"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:text=""/>
+            <TextView android:id="@+id/speed_units"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:text="@string/kilometers_per_hour"
+                android:paddingBottom="@dimen/padding"
+                android:background="@android:color/black"
+                android:textColor="#669900"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/box_calories"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/calories_value"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:textColor="#669900"
+                android:textSize="@dimen/small_value"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:text=""/>
+            <TextView android:id="@+id/calories_units"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/units"
+                android:text="@string/calories_burned"
+                android:paddingBottom="@dimen/padding"
+                android:background="@android:color/black"
+                android:textColor="#669900"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Desired pace/speed row -->
+    <LinearLayout
+        android:id="@+id/desired_pace_control"
+        android:paddingTop="@dimen/row_spacing"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <!-- Button "-", for decrementing desired pace/speed -->
+        <Button android:id="@+id/button_desired_pace_lower"
+            android:text="-"
+            android:textSize="@dimen/button_sign"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"/>
+
+        <!-- Container for desired pace/speed -->
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="@dimen/desired_pace_width"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/desired_pace_label"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="@string/desired_pace"/>
+
+            <!-- Current desired pace/speed -->
+            <TextView android:id="@+id/desired_pace_value"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/desired_pace"
+                android:textColor="#fff"
+                android:layout_width="@dimen/desired_pace_width"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Button "+", for incrementing desired pace/speed -->
+        <Button android:id="@+id/button_desired_pace_raise"
+            android:text="+"
+            android:textSize="@dimen/button_sign"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    <stanford.hackathon.joggers.shapes.CircleImageView
+        android:id="@+id/btnBlobStorage"
+        android:src="@drawable/upload"
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/btnMaps"
+        android:layout_alignLeft="@+id/btnMaps"
+        android:layout_alignStart="@+id/btnMaps" />
+    <stanford.hackathon.joggers.shapes.CircleImageView
+        android:id="@+id/btnMaps"
+        android:src="@drawable/maps"
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Developed by: Srujan, Prakhar &amp; Arjun"
+        android:textColor="#669900"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>
